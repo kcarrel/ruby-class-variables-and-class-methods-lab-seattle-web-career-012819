@@ -22,5 +22,7 @@ class Song
   end 
   
   def self.artists
-    @@artists.keep_if(uni)
+    @@artists.uniq 
+  end 
+  
 end 
